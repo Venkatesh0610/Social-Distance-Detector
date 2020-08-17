@@ -1,6 +1,6 @@
 # import the necessary packages
-from pyimagesearch.social_distancing_config import NMS_THRESH
-from pyimagesearch.social_distancing_config import MIN_CONF
+from model.social_distancing_config import NMS_THRESH
+from model.social_distancing_config import MIN_CONF
 import numpy as np
 import cv2
 
