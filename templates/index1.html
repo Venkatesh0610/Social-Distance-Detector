@@ -1,0 +1,86 @@
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Social Distance Detector</title>
+        <link rel="shortcut icon" href="/static/distance.ico">
+        <link rel="stylesheet" type="text/css" href="/static/styles.css">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<style>
+button
+{
+font-size:20px;
+padding:5px;
+border-radius;5px;
+margin:10px;
+background: #f9f9f9;
+   	border: 2px solid #000000;
+    border-radius: 1000px;
+    box-shadow: 3px 3px #8c8c8c;
+	margin-top: 10px;
+    padding: 10px 36px;
+    color: #000000;
+    display: inline-block;
+   	font: italic bold 20px/1 "Calibri", sans-serif;
+    text-align: center;
+}
+#container
+{
+position:fixed;
+left:30%;
+top:50%;
+}
+#container1
+{
+position:fixed;
+right:30%;
+top:50%;
+}
+#image
+{
+position:fixed;
+left:30%;
+top:20%;
+}
+#image1
+{
+background-image:url("static/camera.png");
+position:fixed;
+right:30%;
+top:20%;
+}
+</style>
+</head>
+ <body>
+
+      <!-- Website Title -->
+    	<div class="container">
+            <h2 class='container-heading'><span class="heading_font">Video Streaming Demonstration</span></h2>
+
+    	</div>
+      <div id="image">
+       <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS1b67rL3ggC3owD89FBKeba6ghB8JwitieEA&usqp=CAU">
+      </div>
+          <div id="container">
+      <button id="myVideoButton" class="float-left submit-button" >Select Video</button>
+</div>
+
+      <script type="text/javascript">
+        document.getElementById("myVideoButton").onclick = function () {
+        location.href = "http://localhost:5000/video_feed";
+      };
+    </script>
+      <div id="image1">
+       <img src = "data:image/png;base64,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">
+      </div>
+<div id="container1">
+      <button id="myCameraButton" class="float-right submit-button" >Select Camera</button>
+</div>
+    <script type="text/javascript">
+        document.getElementById("myCameraButton").onclick = function () {
+        location.href = "http://localhost:5000/camera_feed";
+      };
+    </script>
+  </body>
+</html>

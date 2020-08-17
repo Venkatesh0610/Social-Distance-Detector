@@ -1,0 +1,16 @@
+Flask==1.0.2
+gunicorn==19.9.0
+numpy==1.16.0
+pip==20.1.1
+pillow
+gevent
+scikit-learn==0.22.1
+imutils
+opencv-python
+scipy
+flask
+os
+codes
+setuptools
+__future__
+pyimagesearch
