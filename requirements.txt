@@ -13,4 +13,4 @@ os
 codes
 setuptools
 __future__
-pyimagesearch
+model
